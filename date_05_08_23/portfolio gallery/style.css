@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mochiy+Pop+P+One&family=Montserrat:wght@500&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* universal selector */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Lobster', cursive;
+        font-family: 'Mochiy Pop P One', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
+}
+
+/* images */
+
 .box-1{
     background-image:url("./media/waterFalls.jpg");
 }
 .box-2{
-    background-image:url("./media/hills2.jpg");
+    background-image:url("./media/hills.jpg");
 }
 .box-3{
     background-image:url("./media/ocean.jpg");
@@ -25,3 +38,27 @@
 .box-7{
     background-image:url("./media/beach.jpg");
 }
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right, #041308, #0b3317);
+}
+
+.left-text{
+    width: 40vw;
+    text-align: center;
+    color: white;
+}
+
+.left-text h2{
+    font-size: 2.5rem;
+}
+.left-text p{
+    margin-top: 5px;
+    font-size: 0.8rem;
+}
+
