@@ -110,5 +110,7 @@ body {
 }
 
 .doodle-container{
-    text-align: right;
+    position:fixed;
+    right:40px;
+    bottom:0;
 }
