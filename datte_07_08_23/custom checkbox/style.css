@@ -31,7 +31,7 @@
     background-color: var(--brand-color);
 }
 
-.checkbox:checked + label,
+.checkbox:focus + label,
 label:active{
     border-color: var(--brand-color);
     outline: 2px solid #CFBFFF;
