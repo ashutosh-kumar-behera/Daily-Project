@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+.hero-section{
+    background-image: url(images/header.jpeg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-content{
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.text-content h2{
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.text-content span, h1,.black-section h2{
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.black-section{
+    background-color: black;
+    color: white;
+    padding: 24;
+    text-align: center;
+}
+
+.black-section h2{
+    display: inline;
+}
+.black-section span{
+    font-size: 144px;
+    font-weight: 400;
+}
+
+.course{
+    margin-block: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 53px;
+}
+
+.course-container{
+    width: 320px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.course-container:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+}
+
+.image-container img{
+    width: 320px;
+}
+
+.course-text-container{
+    padding: 20px;
+    font-weight: 400;
+}
+.course-text-container h4{
+    padding-block: 10px;
+    font-size: 24px;
+}
+.course-text-container p{
+    font-size: 14px;
+}
+
+.info-section{
+    display: flex;
+    color: white;
+}
+
+.info-section div{
+    padding: 34px;
+}
+.info-section h2{
+    font-size: 64px;
+    padding-block: 10px;
+}
+.info-section p{
+    padding-block: 5px;
+}
+
+.contact-section{
+    background-color: #515603;
+}
+.about-section{
+    background-color: #722300;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-block: 40px;
+}
+
+@media (max-width: 740px) {
+    .text-content{
+        padding:20px 40px;
+    }
+    .text-content h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.black-section{
+    padding-block: 15px;
+}
+
+.text-content span, h1,
+.black-section h2{
+    font-size: 30px;
+    font-weight: 400;
+}
+.black-section span{
+    font-size: 40px;
+}
+ .course, .info-section{
+    flex-wrap: wrap;
+ }
+
+ .info-section div{
+    padding: 20px;
+ }
+ .info-section h2{
+     font-size: 26px;
+ }
+
+ .footer{
+    padding-block: 20px;
+ }
+
+}
