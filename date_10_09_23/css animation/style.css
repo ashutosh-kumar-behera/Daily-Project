@@ -1,0 +1,147 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+    width: 100vw;
+    height: 100vh;
+ }
+
+ header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ 
+ @keyframes color-change {
+    0%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        background-color: pink;
+        left: 300px;
+        top: 0px;
+    }
+    50%{
+        background-color: yellow;
+        left: 300px;
+        top: 300px;
+    }
+    75%{
+        background-color: blue;
+        left: 0px;
+        top: 300px;
+    }
+    100%{
+        background-color: green;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+        
+
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    position: relative;
+
+    /* -----------animation----------- */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+    /*
+    animation-name: color-change;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    */
+
+    /* ------------Or Use Single Property Animation------------ */
+
+    animation:color-change 5s linear 0s infinite ;
+}
+
+
+@keyframes name-move{
+    0%{
+        left: -150px;
+    }
+    100%{
+        left: 110%;
+    }
+}
+
+
+.name{
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: 5px;
+    animation: name-move 10s linear 0s infinite;
+}
+
+
+@keyframes x-rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.img{
+    display: flex;
+    justify-content: space-around;
+}
+
+h4{
+    animation: x-rotate 0.2s linear 0s infinite;
+}
+
+
+.button-container{
+    display: table;
+    margin: auto;
+    position: relative;
+}
+
+button{
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 25px;
+    border: 1px solid gold;
+}
+
+@keyframes wave-effect{
+    0%{
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale(1.5);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(1.1);
+    }
+}
+
+.wave-btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid gold;
+    position: absolute;
+    background-color: gold;
+    animation: wave-effect 1.5s linear 0s infinite;
+}
