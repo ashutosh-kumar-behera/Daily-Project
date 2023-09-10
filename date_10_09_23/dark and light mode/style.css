@@ -1,0 +1,19 @@
+
+:root {
+  --light-bg: #fff;
+  --light-color: #000;
+  --dark-bg: #000;
+  --dark-color: #fff;
+  --border:1px solid #00f;
+}
+
+.inner-container {
+  background-color: var(--light-bg);
+  color: var(--light-color);
+  border: var(--border);
+}
+
+.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-color);
+}
